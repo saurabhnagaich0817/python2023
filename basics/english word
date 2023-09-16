@@ -1,0 +1,51 @@
+Write a Program for the given positive integer to do the following:
+
+if 1<=number<=9 print the uppercase English word corresponding to the number. eg ONE for 1, TWO for 2, THREE for 3, etc.
+if number>9 print can't digit covered with " tokens
+Input Format
+
+single line for Integer Value
+
+Constraints
+
+No Need
+
+Output Format
+
+String
+
+Sample Input 0
+
+1
+Sample Output 0
+
+ONE
+Sample Input 1
+
+2
+Sample Output 1
+
+TWO
+Sample Input 2
+
+441
+Sample Output 2
+
+can't digit covered with " tokens
+Submissions: 184
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+​
+code:
+a=eval(input())
+l=["",'ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE']
+if 1<=a<=9:
+    print(l[a])
+else:
+    print("""can't digit covered with " tokens""")
