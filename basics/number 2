@@ -1,0 +1,35 @@
+
+Write a program to display the number of days in a month where the month number is given as a input.
+
+This program will read month value and print total number of days in that month. In the solution the program control structures(if-else, looping, switch-cases) are not allowed. So do it without mentioning the control structures. Solution will not considred with control structure keywords.
+
+Note: Here we are not checking leap year, so we fixed 28 days in February. conditional statement
+
+Input Format
+
+single line Integer
+
+Constraints
+
+No Need
+
+Output Format
+
+Integer
+
+Sample Input 0
+
+1
+Sample Output 0
+
+31
+Sample Input 1
+
+4
+Sample Output 1
+
+30
+code:
+a=eval(input())
+out=["",31,28,31,30,31,30,31,31,30,31,30,31]
+print(out[a])
