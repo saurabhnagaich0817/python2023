@@ -1,0 +1,52 @@
+In this challenge, you will use logical bitwise operators. All data is stored in its binary representation. The logical operators, use 1 to represent true and 0 to represent false. The logical operators compare bits in two numbers and return true or false, 0 or 1, for each bit compared.
+
+Bitwise AND operator & The output of bitwise AND is 1 if the corresponding bits of two operands is 1. If either bit of an operand is 0, the result of corresponding bit is evaluated to 0. It is denoted by &.
+
+Bitwise OR operator | The output of bitwise OR is 1 if at least one corresponding bit of two operands is 1. It is denoted by |.
+
+Bitwise XOR (exclusive OR) operator ^ The result of bitwise XOR operator is 1 if the corresponding bits of two operands are opposite. 
+image
+
+Now task is, you will be given 2 integers and a thershold k. find the maximum value between bitwise and, or and xor. the maximum should not greater than the thershold k.
+
+default maximum value is zero.
+
+Optional: also try to solve without conditional statements(if-else etc)
+Input Format
+
+The first line contains 2 space-separated integers.
+second line having integer thershold k. 
+Constraints
+
+None
+
+Output Format
+
+print maximum integer from all operation.
+
+Sample Input 0
+
+3 5
+3
+Sample Output 0
+
+1
+Sample Input 1
+
+1 2
+2
+Sample Output 1
+
+0
+
+code:
+a,b=[int(x) for x in input().split()] 
+c=int(input())
+x=a^b
+y=a&b
+z=a|b
+out=x if x<a and x<z else y  if y<z else z
+if out<c:
+    print(out)
+else:
+    print(0)
